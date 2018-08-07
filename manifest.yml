@@ -1,8 +1,8 @@
 ---
 applications:
-- name: pal-tracker
+- name: pal-tracker-mh
   path: build/libs/pal-tracker.jar
   routes:
-  - route: pal-tracker-unsubjective-aeroelasticity.apps.pcf.paltraining.perficient.com
+  - route: mh-pal-tracker-unsubjective-aeroelasticity.apps.pcf.paltraining.perficient.com
   env:
     WELCOME_MESSAGE: Hello from the review environment
