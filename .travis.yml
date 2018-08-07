@@ -12,6 +12,8 @@ jobs:
     - stage: build and publish
       language: java
       jdk: oraclejdk8
+      before_install:
+        - chmod +x gradlew
       install: skip
       script: ./gradlew clean build
       before_deploy:
@@ -37,4 +39,4 @@ jobs:
         password: $CF_PASSWORD
         organization: $CF_ORG
         space: review
-        
+
