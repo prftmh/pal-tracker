@@ -12,10 +12,8 @@ jobs:
     - stage: build and publish
       language: java
       jdk: oraclejdk8
-      before_install:
-        - chmod +x gradlew
       install: skip
-      script: ./gradlew clean build
+      script: gradlew clean build
       before_deploy:
         - git config --local user.name "Travis CI"
         - git config --local user.email "travis@example.com"
